@@ -1,38 +1,30 @@
 .App {
-  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-card:hover {
+  box-shadow: rgba(44, 44, 152, 0.6) 0px 20px 27px -5px,
+    rgba(103, 30, 30, 0.3) 0px 8px 16px -8px !important;
+  background-color: aquamarine;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-card:active {
+  box-shadow: rgba(25, 25, 234, 0.9) 0px 25px 27px -5px,
+    rgba(86, 8, 8, 0.3) 0px 15px 16px -8px;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-card-bg {
+  background-color: aqua;
 }
